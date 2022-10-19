@@ -53,12 +53,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA8W54d6VP2PW8vDvvI2mpxxYwPuYVB2b4',
-    appId: '1:1056294392697:web:8b5367b388dfe44afb15a8',
-    messagingSenderId: '1056294392697',
-    projectId: 'sistemaagendamento-94acb',
-    authDomain: 'sistemaagendamento-94acb.firebaseapp.com',
-    storageBucket: 'sistemaagendamento-94acb.appspot.com',
-    measurementId: 'G-QZ02J4250W',
+    apiKey: 'AIzaSyCbtf7huq5HgRrmlq4w2lQYDTp-Je_-L-c',
+    appId: '1:33339148398:web:b64cfca309fd106d34fe7f',
+    messagingSenderId: '33339148398',
+    projectId: 'agendamentoodontolife',
+    authDomain: 'agendamentoodontolife.firebaseapp.com',
+    storageBucket: 'agendamentoodontolife.appspot.com',
+    measurementId: 'G-3LDVZ4B2PD',
   );
 }
