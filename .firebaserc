@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "funcionario-page",
+    "staging": "funcionario-page"
+  },
+  "targets": {},
+  "etags": {}
+}
