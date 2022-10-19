@@ -17,7 +17,7 @@ class _FuncionarioPageState extends State<FuncionarioPage> {
   final formatdata = DateFormat("dd-MM-yyyy");
   final TextEditingController controllerDATA = TextEditingController();
 
-  var db = FirebaseFirestore.instance.collection("pendentes");
+  var db = FirebaseFirestore.instance.collection("pendentes_odontolife");
 
   final CollectionReference _clientes =
       FirebaseFirestore.instance.collection('odontolife1');
@@ -312,7 +312,7 @@ class _FuncionarioPageState extends State<FuncionarioPage> {
       );
 
   Stream<List<User>> readUsers() => FirebaseFirestore.instance
-          .collection('odontolife')
+          .collection('odontolife1')
           .where('data', isEqualTo: controllerDATA.text)
           .snapshots()
           .map((snapshot) {
@@ -358,7 +358,7 @@ class _FuncionarioPageState extends State<FuncionarioPage> {
         FirebaseFirestore.instance; //instanciado a classe de coneção com o db
 
     QuerySnapshot snapshot1 = (await db
-        .collection("odontolife")
+        .collection("odontolife1")
         .get()); //fazendo a consulta e armazenando na variavel snapshot(1 mesagem especifica)
 
 /*

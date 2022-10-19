@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "funcionario-page",
-    "staging": "funcionario-page"
+    "default": "funcionarioodontolife",
+    "staging": "funcionarioodontolife"
   },
   "targets": {},
   "etags": {}

@@ -128,17 +128,7 @@ class _PagePendentesState extends State<PagePendentes> {
     // });
   }
 
-  /*
-  Future<String> _delete(String clienteId) async {
-    //setState(() async{
-    final itemremove = await Future.delayed(const Duration(seconds:  1), (){return clienteId; });
-    ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Agendamento deletado com sucesso')));
-    // });
-    return itemremove;
 
-  }
-*/
   Widget buildUser(User user) => ListTile(
         leading: CircleAvatar(),
         title: Text(user.nome),
@@ -181,7 +171,7 @@ class _PagePendentesState extends State<PagePendentes> {
       );
 
   Stream<List<User>> readUsers() => FirebaseFirestore.instance
-      .collection('pendentes')
+      .collection('pendentes_odontolife')
       .snapshots()
       .map((snapshot) =>
           snapshot.docs.map((doc) => User.fromJson(doc.data())).toList());
